@@ -1,0 +1,75 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* espaçamento em volta zerado */
+    padding: 0; /* resetando preenchimento */
+    box-sizing: border-box; /* evitar que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
+    
+}
+
+/* estilização header */
+.cabeçalho {
+    background-color: rgb(4, 7, 39);
+    color: white;
+    padding: 1.5rem; /* poderia ser 24px */
+
+    /* alinhamento dos itens */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    /* header fixo */
+    position: fixed; /* posicionamento do header para sobrepor os outros elementos */
+    left: 0;
+    top: 0;
+    z-index: 999; /* eixo z - profundidade do elemento */
+    
+}
+
+/* logo do header */
+.div-logo img {
+    width: 35%; /* usando o % para diminuir seu tamanho */
+    height: 35%;
+}
+
+/* estilização do header */
+.div-button a button {
+    width: 5rem; /* poderia ser 80px */
+    padding: 0.5rem; /* 8px - preenchimento */
+    background-color: wheat; /* cor do botão */
+    border: none; /* remoção das bordas */
+    font-weight: 700; /* espessura da font do botão */
+    border-radius: 5px; /* arredondamento da borda */
+}
+
+/*  */
+.section-01 {
+    padding: 10rem; /* preenchimeto interno da section */
+    background-image: url(Store-Pages---Hero-Banners---Perth_1_1920x_e60b1af8-436a-43bf-8a5f-a168be34d796.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* poderiamos usar 32px */
+    flex-wrap: wrap; /* isso significa que as div poderão quebrar de linha, cao necessário */
+    
+} 
+
+.div-01 {background-color: gray;
+    color: rgb(4, 7, 39);
+    text-align: center; /* alinhamento centralizado dos textos */
+    font-size: 2rem; /* tamanho da letra dentro da caixa */
+    padding: 1rem; /* preenchimento da caixa  */
+    width: 25%; /* largura de caixa em porcentagem */
+    height: 20rem; /* altura da caixa utilizando o rem */
+    min-width: 299px;
+    
+
+}
+
+.div-02 {
+
+}
