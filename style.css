@@ -1,16 +1,20 @@
 * {
     font-family: 'Times New Roman', Times, serif;
-    margin: 0; /* espaçamento em volta zerado */
-    padding: 0; /* resetando preenchimento */
-    box-sizing: border-box; /* evitar que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
-    
+    margin: 0;
+    /* espaçamento em volta zerado */
+    padding: 0;
+    /* resetando preenchimento */
+    box-sizing: border-box;
+    /* evitar que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
+
 }
 
 /* estilização header */
 .cabeçalho {
     background-color: rgb(4, 7, 39);
     color: white;
-    padding: 1.5rem; /* poderia ser 24px */
+    padding: 1.5rem;
+    /* poderia ser 24px */
 
     /* alinhamento dos itens */
     display: flex;
@@ -19,32 +23,42 @@
     flex-direction: row;
 
     /* header fixo */
-    position: fixed; /* posicionamento do header para sobrepor os outros elementos */
+    position: sticky;
+    /* posicionamento do header para sobrepor os outros elementos */
     left: 0;
     top: 0;
-    z-index: 999; /* eixo z - profundidade do elemento */
-    
+    z-index: 999;
+    /* eixo z - profundidade do elemento */
+
 }
 
 /* logo do header */
 .div-logo img {
-    width: 35%; /* usando o % para diminuir seu tamanho */
+    width: 35%;
+    /* usando o % para diminuir seu tamanho */
     height: 35%;
 }
 
 /* estilização do header */
 .div-button a button {
-    width: 5rem; /* poderia ser 80px */
-    padding: 0.5rem; /* 8px - preenchimento */
-    background-color: wheat; /* cor do botão */
-    border: none; /* remoção das bordas */
-    font-weight: 700; /* espessura da font do botão */
-    border-radius: 5px; /* arredondamento da borda */
+    width: 5rem;
+    /* poderia ser 80px */
+    padding: 0.5rem;
+    /* 8px - preenchimento */
+    background-color: wheat;
+    /* cor do botão */
+    border: none;
+    /* remoção das bordas */
+    font-weight: 700;
+    /* espessura da font do botão */
+    border-radius: 5px;
+    /* arredondamento da borda */
 }
 
 /*  */
 .section-01 {
-    padding: 10rem; /* preenchimeto interno da section */
+    padding: 10rem;
+    /* preenchimeto interno da section */
     background-image: url(Store-Pages---Hero-Banners---Perth_1_1920x_e60b1af8-436a-43bf-8a5f-a168be34d796.webp);
     background-position: center;
     background-size: cover;
@@ -53,23 +67,129 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem; /* poderiamos usar 32px */
-    flex-wrap: wrap; /* isso significa que as div poderão quebrar de linha, cao necessário */
-    
-} 
-
-.div-01 {background-color: gray;
-    color: rgb(4, 7, 39);
-    text-align: center; /* alinhamento centralizado dos textos */
-    font-size: 2rem; /* tamanho da letra dentro da caixa */
-    padding: 1rem; /* preenchimento da caixa  */
-    width: 25%; /* largura de caixa em porcentagem */
-    height: 20rem; /* altura da caixa utilizando o rem */
-    min-width: 299px;
-    
+    gap: 2rem;
+    /* poderiamos usar 32px */
+    flex-wrap: wrap;
+    /* isso significa que as div poderão quebrar de linha, cao necessário */
 
 }
 
-.div-02 {
+.div-01 {
+    background-color: gray;
+    color: rgb(4, 7, 39);
+    text-align: center;
+    /* alinhamento centralizado dos textos */
+    font-size: 2rem;
+    /* tamanho da letra dentro da caixa */
+    padding: 1rem;
+    /* preenchimento da caixa  */
+    width: 25%;
+    /* largura de caixa em porcentagem */
+    height: 20rem;
+    /* altura da caixa utilizando o rem */
+    min-width: 299px;
+    /* Largura mínima da caixa ela não ficacra  */
 
+
+}
+
+.div-01 p {
+    margin-top: 1rem;
+}
+
+/* Aqui estamos estilizando as listas */
+.ul-divs li a {
+    text-decoration: none;
+    background-color: #171430;
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    /*arredondamento da borda*/
+}
+
+.ul-divs li {
+    margin: 5px 5px;
+    /*alterando os 4 lados externos dos elementos, primeiro valor (superior,inferior) e segundo valor (laterais esquerda e direita)*/
+}
+
+.fa-cart-shopping,
+.fa-house  {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Aqui estamos estilizando a tarja em destaque entre as sections */
+.img-div {
+    padding: 3%; /* preenchimento interno */
+    background-image: url(abstract-background-with-dark-blue-grunge-texture_1048-20452.avif); /* caminho da img */
+    background-position: center; /* posicionamento da img */
+    background-size: cover; /* preenchimento total da img na caixa */
+}
+
+
+
+.div-02 {
+padding: 1rem;
+width: 25%;
+height: 20rem;
+min-width: 299px;
+background: url(jovem-asiatico-elegante-posando-com-confianca-contra-um-pano-de-fundo-minimalista-na-moda-moderna_1326977-13881.avif);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+
+}
+
+/* Estilizando a segunda section */
+.section-02 {
+    display: flex; /* tornando flex/lado a lado */
+    justify-content: center; /* alinhamento horizontal */ 
+    align-items: center; /* alinhamento vertical */
+    gap: 1.5rem; /* brecha entre as caixas */
+    padding: 5rem; /* preenchimento interno */
+    background-color:rgb(4, 7, 39); /* Cor de fundo */
+    flex-wrap: wrap; /* Caso necessário você podera quebrar*/
+}
+
+/* Estilização das 3 div sec 2 */
+.caixa {
+    width: 25%; /* Largura da caixa */
+    height: 22rem; /* Altura da caixa */
+    background-color: rgb(4, 71, 110); /* Cor de fundo */
+    min-width: 299px; /* Largura mínima da div */
+    font-size: 1.2rem; /* Tamanho das letras */
+    color: white; /* Cor dos textos */
+    box-shadow: 10px 10px 20px wheat; /* Sombra externa das caixas */
+    cursor: pointer; /* Ativando cursor pointer */
+    
+}
+
+.caixa:hover {
+    box-shadow: 12px 12px 22px rgb(4, 71, 110); /* Sombra externa das caixas */
+    transition: 0.8s;
+    
+}
+
+.section-03 {
+    display: flex; /* tornando flex/lado a lado */
+    justify-content: center; /* alinhamento horizontal */ 
+    align-items: center; /* alinhamento vertical */
+    gap: 1.5rem; /* brecha entre as caixas */
+    padding: 5rem; /* preenchimento interno */
+    background-color:rgb(4, 7, 39); /* Cor de fundo */
+    flex-wrap: wrap; /* Caso necessário você podera quebrar*/
+ 
+
+}
+
+/* Chamando as classes primárias para estilização */
+.div-03, .div-04 {
+    height: 15rem;  /* Altura das caixas */
+   
 }
