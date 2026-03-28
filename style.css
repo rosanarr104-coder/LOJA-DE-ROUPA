@@ -147,7 +147,7 @@ gap: 15px;
 }
 
 /* Estilizando a segunda section */
-.section-02 {
+.section-02, .section-04 {
     display: flex; /* tornando flex/lado a lado */
     justify-content: center; /* alinhamento horizontal */ 
     align-items: center; /* alinhamento vertical */
@@ -188,8 +188,44 @@ gap: 15px;
 
 }
 
+
+
+
 /* Chamando as classes primárias para estilização */
 .div-03, .div-04 {
     height: 15rem;  /* Altura das caixas */
+    padding: 1rem;
+    text-align: center;
    
 }
+
+/* estilização dos textos da primeira caixa */
+.content-text {
+    text-align: start; /* alinhando os textos ao icons */
+    margin-top: 1.5rem; /* espaçamento em torno da caixa */
+    color: #171430; /* cor dos textos */
+    font-weight: 500; /* peso da fonte */
+}
+
+/* acessando os icons para estilização */
+.icon-div03 i {
+    color: #171430; /* cores dos icons */
+    font-size: 3rem; /* tamanho dos icons */
+    margin-top: 1.2rem; /* espaçamento superior dos icons */
+}
+
+/* inicio de formatação caixa 02 section 03 */
+.button-div04 a button{
+    padding: 0.5rem; /* preenchimento interno do button */
+    background-color: #171430; /* cor de fundo */
+    color: white; /* cor de texto */
+    font-weight: 600; /* peso da fonte */
+    margin: 1rem 0; /* espaçamento superior/inferior 1rem, e 0 nas laterais */
+
+
+}
+
+.text-div04 p{
+    color: #171430;
+}
+
