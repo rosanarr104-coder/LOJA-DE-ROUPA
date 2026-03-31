@@ -34,6 +34,11 @@
 
 }
 
+h1 {
+    color: wheat;
+    font-size: 50px;
+}
+
 /* logo do header */
 .div-logo img {
     width: 35%;
@@ -74,6 +79,23 @@
     flex-wrap: wrap;
     /* isso significa que as div poderão quebrar de linha, cao necessário */
 
+}
+
+.whatsapp img {  /* alterando tamanho do icon whatsapp */
+    width: 50px; /* largura do icon */
+}
+
+
+.whatsapp { /* div que guarda o icon whatsapp */
+    position: fixed; /* posicionamento fixo */
+    right: 25px; /* posicionamento à direita (25px)  */
+    bottom: 25px; /* posicionamento do bottom */
+
+}
+
+.whatsapp img:hover {
+    background-color: rgb(4, 71, 110);
+    color: black;
 }
 
 .div-01 {
@@ -162,6 +184,17 @@ gap: 15px;
 .caixa img{
     width: 100%;
     height: 50%;
+}
+
+.caixa button {
+    background-color: rgb(4, 7, 39);
+    color: white;
+}
+
+.caixa button:hover {
+    background-color: rgb(4, 71, 110);
+    color: black;
+
 }
 
 
