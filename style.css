@@ -6,6 +6,8 @@
     /* resetando preenchimento */
     box-sizing: border-box;
     /* evitar que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
+    list-style: none; /* Apagar os pontos */
+    
 
 }
 
@@ -157,6 +159,12 @@ gap: 15px;
     flex-wrap: wrap; /* Caso necessário você podera quebrar*/
 }
 
+.caixa img{
+    width: 100%;
+    height: 50%;
+}
+
+
 /* Estilização das 3 div sec 2 */
 .caixa {
     width: 25%; /* Largura da caixa */
@@ -165,13 +173,13 @@ gap: 15px;
     min-width: 299px; /* Largura mínima da div */
     font-size: 1.2rem; /* Tamanho das letras */
     color: white; /* Cor dos textos */
-    box-shadow: 10px 10px 20px wheat; /* Sombra externa das caixas */
+    box-shadow: 5px 5px 8px wheat; /* Sombra externa das caixas */
     cursor: pointer; /* Ativando cursor pointer */
     
 }
 
 .caixa:hover {
-    box-shadow: 12px 12px 22px rgb(4, 71, 110); /* Sombra externa das caixas */
+    box-shadow: 10px 10px 15px rgb(4, 71, 110); /* Sombra externa das caixas */
     transition: 0.8s;
     
 }
@@ -227,5 +235,75 @@ gap: 15px;
 
 .text-div04 p{
     color: #171430;
+}
+
+/* inicio estilização rodapé */
+.rodape {
+    background-color:rgb(4, 7, 39); /* cor de fundo do rodapé */
+    padding: 2rem; /* 32 px */
+    text-align: center; /* alinhando texto ao centro */
+    font-size: 1.1rem; /* definindo tamanho do text*/
+    
+}
+
+.content {
+    display: flex; /* flexbok / lado a lado*/
+    align-items: center; /* alinhamento vertical */
+    justify-content: center; /* alinhamento horizontal */
+    margin-bottom: 1.5rem;
+    gap: 3rem; /* espacamento dos elementos */
+    flex-wrap: wrap; /* quebra de caixas */
+}
+
+/* espaçamento da div que guarda os icon*/
+.social-media {
+    padding: 1.5rem;
+}
+
+/* estilizando os icon */
+.social-media i {
+    color: white; /* cor dos icon */
+    font-size: 2em; /* 32px | tamanho dos icon */
+    margin: 0.5em; /* espaçamento em volta dos icon (4 lados) */
+}
+
+.social-media i:hover {
+    color: rgb(4, 71, 110);
+}
+
+
+/* linha divisão entre as div principais */
+.line {
+    width: 60%; /* largura da linha */
+    margin: 0.5rem auto; /* espaçamento em torno da linha superior e inferior (0.5rem) com as laterais automáticas (navegador) */
+    background-color: rgb(85, 83, 83); /* cor de fundo do hr */
+    border: none; /* remover as bordas por padrão */
+    height: 2px; /* devenir altura da linha */
+
+    
+}
+
+.div-list ul li{
+   margin-bottom: 0.7rem;
+}
+
+.div-list ul li a {
+    color: wheat;
+    text-decoration: none;
+
+}
+
+.div-list ul li a:hover {
+    color:  rgb(4, 71, 110);
+    transition: 0.8s;
+
+
+}
+
+/* especificação das listas em colunas para mobile */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
 }
 
